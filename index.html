@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark light" />
+    <title>Photography Collection</title>
+    <meta name="description" content="个人摄影作品集，简洁高级风格。" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到内容</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="回到顶部">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">
+            <span class="brand-name" data-field="name">WenyueZhang</span>
+            <span class="brand-subtitle" data-field="subtitle">Photography Collection</span>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="主导航">
+          <a href="#work">Works</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1 class="hero-title" data-field="headline">拍下过，记住过，好过拥有。</h1>
+            <p class="hero-desc" data-field="description">
+              摄入相簿，绚烂如电，虚幻如雾，哀愁和仰慕。
+            </p>
+
+            <div class="hero-actions">
+              <button class="btn btn-primary" type="button" data-action="scrollToWork">View Works</button>
+              <a class="btn btn-ghost" href="#contact">Contact</a>
+            </div>
+
+            <dl class="hero-meta" aria-label="作品概览">
+              <div class="meta-item">
+                <dt>Series</dt>
+                <dd data-field="seriesCount">4</dd>
+              </div>
+              <div class="meta-item">
+                <dt>Photos</dt>
+                <dd data-field="photoCount">12</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="hero-visual" aria-label="封面精选">
+            <div class="featured-card">
+              <figure class="featured-figure">
+                <img
+                  src="./assets/01.jpg"
+                  alt="精选作品封面"
+                  loading="lazy"
+                  data-featured
+                />
+              </figure>
+              <div class="featured-caption">
+                <span class="caption-title" data-field="featuredTitle">Featured</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="work" id="work" aria-label="作品">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <h2 class="section-title">Works</h2>
+              <p class="section-desc">Click to view the original image.</p>
+            </div>
+
+            <div class="filters" role="tablist" aria-label="作品筛选">
+              <button class="chip is-active" type="button" role="tab" aria-selected="true" data-filter="all">
+                All
+              </button>
+              <button class="chip" type="button" role="tab" aria-selected="false" data-filter="city">City</button>
+              <button class="chip" type="button" role="tab" aria-selected="false" data-filter="portrait">Portrait</button>
+              <button class="chip" type="button" role="tab" aria-selected="false" data-filter="humanistic">Humanistic</button>
+              <button class="chip" type="button" role="tab" aria-selected="false" data-filter="landscape">Landscape</button>
+            </div>
+          </div>
+
+          <div class="grid" data-gallery>
+            <figure class="card" data-tags="city" data-gear="Fujifilm X-T5 · 16mm" data-note="Concrete Jungle where dreams are made of.">
+              <button class="card-media" type="button" data-lightbox>
+                <img
+                  src="./assets/02.jpg"
+                  alt="Time"
+                  loading="lazy"
+                />
+              </button>
+              <figcaption class="card-caption">
+                <span class="card-title">Time</span>
+                <span class="card-sub">US · New York · 2024</span>
+              </figcaption>
+            </figure>
+
+            <figure class="card" data-tags="humanistic" data-gear="Richo GR3 · 18mm" data-note="Born to be alive">
+              <button class="card-media" type="button" data-lightbox>
+                <img
+                  src="./assets/03.jpg"
+                  alt="Chill"
+                  loading="lazy"
+                />
+              </button>
+              <figcaption class="card-caption">
+                <span class="card-title">Chill</span>
+                <span class="card-sub">Switzerland · Interlaken · 2025</span>
+              </figcaption>
+            </figure>
+
+            <figure class="card" data-tags="city" data-gear="Richo GR3 · 18mm" data-note="slipping through dreamland like a tourist.">
+              <button class="card-media" type="button" data-lightbox>
+                <img
+                  src="./assets/04.jpg"
+                  alt="The Life"
+                  loading="lazy"
+                />
+              </button>
+              <figcaption class="card-caption">
+                <span class="card-title">Dreamland</span>
+                <span class="card-sub">Switzerland · Interlaken · 2025</span>
+              </figcaption>
+            </figure>
+
+            <figure class="card" data-tags="humanistic" data-gear="Canon EOS 80D · 190mm" data-note="If I ain't got you, I ain't nobody.">
+              <button class="card-media" type="button" data-lightbox>
+                <img
+                  src="./assets/05.jpg"
+                  alt="Happiness Is A Butterfly"
+                  loading="lazy"
+                />
+              </button>
+              <figcaption class="card-caption">
+                <span class="card-title">Happiness Is A Butterfly</span>
+                <span class="card-sub">China · Sanya · 2022</span>
+              </figcaption>
+            </figure>
+
+            <figure class="card" data-tags="city" data-gear="Richo GR3 · 18mm" data-note="In seoul city, I see your soul.">
+              <button class="card-media" type="button" data-lightbox>
+                <img
+                  src="./assets/06.jpg"
+                  alt="Flying lights"
+                  loading="lazy"
+                />
+              </button>
+              <figcaption class="card-caption">
+                <span class="card-title">Flying lights</span>
+                <span class="card-sub">South Korea · Seoul · 2025</span>
+              </figcaption>
+            </figure>
+
+            <figure class="card" data-tags="city" data-gear="Richo GR3 · 18mm" data-note="Everyday is Everyday">
+              <button class="card-media" type="button" data-lightbox>
+                <img
+                  src="./assets/07.jpg"
+                  alt="Cloudy Day"
+                  loading="lazy"
+                />
+              </button>
+              <figcaption class="card-caption">
+                <span class="card-title">Cloudy Day</span>
+                <span class="card-sub">Switzerland · Bern · 2025</span>
+              </figcaption>
+            </figure>
+
+            <figure class="card" data-tags="city" data-gear="Fujifilm X-T5 · 42mm" data-note="凝住今日怎样好。">
+              <button class="card-media" type="button" data-lightbox>
+                <img
+                  src="./assets/09.jpg"
+                  alt="Salon"
+                  loading="lazy"
+                />
+              </button>
+              <figcaption class="card-caption">
+                <span class="card-title">Salon</span>
+                <span class="card-sub">China · Hong Kong · 2023</span>
+              </figcaption>
+            </figure>
+
+            <figure class="card" data-tags="humanistic" data-gear="Fujifilm X-T5 · 52mm" data-note="They say in heaven love comes first.">
+              <button class="card-media" type="button" data-lightbox>
+                <img
+                  src="./assets/13.jpg"
+                  alt="山与湖"
+                  loading="lazy"
+                />
+              </button>
+              <figcaption class="card-caption">
+                <span class="card-title">TEXAS BLUE</span>
+                <span class="card-sub">US · Austin · 2024</span>
+              </figcaption>
+            </figure>
+
+            <figure class="card" data-tags="landscape" data-gear="Canon EOS 80D · 200mm" data-note="Heat heat waves I'm swimmin' in a mirror">
+              <button class="card-media" type="button" data-lightbox>
+                <img
+                  src="./assets/15.jpg"
+                  alt="自然光人像"
+                  loading="lazy"
+                />
+              </button>
+              <figcaption class="card-caption">
+                <span class="card-title">Heat Waves</span>
+                <span class="card-sub">China · Sanya · 2022</span>
+              </figcaption>
+            </figure>
+
+            <figure class="card" data-tags="city" data-gear="Fujifilm X-T5 · 17mm" data-note="我已确信 游荡浮华世界 就为相交那一下">
+              <button class="card-media" type="button" data-lightbox>
+                <img
+                  src="./assets/10.jpg"
+                  alt="人群与光影"
+                  loading="lazy"
+                />
+              </button>
+              <figcaption class="card-caption">
+                <span class="card-title">Glimpse</span>
+                <span class="card-sub">China · Hong Kong · 2023</span>
+              </figcaption>
+            </figure>
+
+            <figure class="card" data-tags="humanistic" data-gear="Canon EOS 80D · 18mm" data-note="Forever young.">
+              <button class="card-media" type="button" data-lightbox>
+                <img
+                  src="./assets/16.jpg"
+                  alt="人群与光影"
+                  loading="lazy"
+                />
+              </button>
+              <figcaption class="card-caption">
+                <span class="card-title">Teenage Dream</span>
+                <span class="card-sub">China · Chongqing · 2023</span>
+              </figcaption>
+            </figure>
+
+            <figure class="card" data-tags="landscape" data-gear="Fujifilm X-T5 · 26mm" data-note="季節に身を置いて 流れに身を任せ">
+              <button class="card-media" type="button" data-lightbox>
+                <img
+                  src="./assets/17.jpg"
+                  alt="人群与光影"
+                  loading="lazy"
+                />
+              </button>
+              <figcaption class="card-caption">
+                <span class="card-title">ガーデン</span>
+                <span class="card-sub">Japan · Nara · 2024</span>
+              </figcaption>
+            </figure>
+
+            <figure class="card" data-tags="city" data-gear="Fujifilm X-T5 · 16mm" data-note="Build a city in the sky.">
+              <button class="card-media" type="button" data-lightbox>
+                <img
+                  src="./assets/12.jpg"
+                  alt="沙漠与公路"
+                  loading="lazy"
+                />
+              </button>
+              <figcaption class="card-caption">
+                <span class="card-title">Empire State of Mind</span>
+                <span class="card-sub">US · New York · 2024</span>
+              </figcaption>
+            </figure>
+
+            <figure class="card" data-tags="city" data-gear="Fujifilm X-T5 · 16mm" data-note="This could be heaven or this could be hell.">
+              <button class="card-media" type="button" data-lightbox>
+                <img
+                  src="./assets/14.jpg"
+                  alt="天空与建筑线条"
+                  loading="lazy"
+                />
+              </button>
+              <figcaption class="card-caption">
+                <span class="card-title">The Oasis</span>
+                <span class="card-sub">US · Austin · 2024</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about" aria-label="关于我">
+        <div class="container about-inner">
+          <div class="about-card">
+            <h2 class="section-title">About</h2>
+            <p class="about-text" data-field="about">
+              Pay attention to the sense of daily order and the flow of emotions.
+            </p>
+
+            <ul class="about-list" aria-label="关键信息">
+              <li><span class="label">gear</span><span class="value" data-field="gear">Richo GR3 / Fujifilm X-T5 / 16-80mm</span></li>
+              <li><span class="label">base</span><span class="value" data-field="base">NYC</span></li>
+              <li><span class="label">style</span><span class="value" data-field="style">Concise, Cinematic, Natural light</span></li>
+            </ul>
+          </div>
+
+          <div class="about-side">
+            <div class="quote">
+              <p class="quote-text" data-field="quote">“Rooted but flow”</p>
+              <p class="quote-meta" data-field="quoteMeta">— Note</p>
+            </div>
+            <div class="stats">
+              <div class="stat">
+                <span class="stat-number" data-field="years">5+</span>
+                <span class="stat-label">years</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number" data-field="collabs">20+</span>
+                <span class="stat-label">collabs</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact" aria-label="联系">
+        <div class="container contact-inner">
+          <div>
+            <h2 class="section-title">Contact</h2>
+            <p class="section-desc">Welcome to exchange ideas and leave your comments!</p>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-row">
+              <span class="contact-label">E-mail</span>
+              <a class="contact-value" href="mailto:hello@example.com" data-field="email">wenyuezhang825@gmail.com</a>
+            </div>
+            <div class="contact-row">
+              <span class="contact-label">Wechat</span>
+              <span class="contact-value" data-field="wechat">ZvvY-0825</span>
+            </div>
+            <div class="contact-row">
+              <span class="contact-label">Instagram</span>
+              <a class="contact-value" href="#" data-field="instagram">zairvvv1_</a>
+            </div>
+
+            <div class="contact-actions">
+              <button class="btn btn-primary" type="button" data-action="copyContact" data-copy="wenyuezhang825@gmail.com">
+                Copy Email Address
+              </button>
+              <button class="btn btn-ghost" type="button" data-action="copyContact" data-copy="ZvvY-0825">
+                Copy Wechat ID
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" aria-label="页脚">
+      <div class="container footer-inner">
+        <p class="footer-left">
+          <span data-field="name">WenyueZhang</span> · © <span data-field="year"></span>
+        </p>
+        <div class="footer-right">
+          <a href="#top">top</a>
+          <button class="linklike" type="button" data-action="toggleTheme">theme</button>
+        </div>
+      </div>
+    </footer>
+
+    <dialog class="lightbox" aria-label="图片预览" data-lightbox-dialog>
+      <div class="lightbox-inner">
+        <button class="lightbox-close" type="button" aria-label="关闭" data-action="closeLightbox">×</button>
+        <figure class="lightbox-figure">
+          <img class="lightbox-img" alt="" />
+          <figcaption class="lightbox-caption">
+            <div class="lightbox-line" aria-label="作品信息">
+              <span class="lightbox-title"></span>
+              <span class="lightbox-sep" aria-hidden="true">·</span>
+              <span class="lightbox-sub"></span>
+              <span class="lightbox-sep" aria-hidden="true">·</span>
+              <span class="lightbox-gear"></span>
+            </div>
+            <div class="lightbox-note" aria-label="作者留言"></div>
+          </figcaption>
+        </figure>
+        <div class="lightbox-nav" aria-label="上一张下一张">
+          <button class="btn btn-ghost" type="button" data-action="prev">previous</button>
+          <button class="btn btn-ghost" type="button" data-action="next">next</button>
+        </div>
+      </div>
+    </dialog>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
